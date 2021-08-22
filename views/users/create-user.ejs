@@ -1,0 +1,121 @@
+<link rel="stylesheet" href="/css/style.css">
+<style>
+  #btn-register{
+    width: 25%;
+    border-radius: 50px;
+  }
+</style>
+<section>
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-2 py-4"></div>
+      <div class="col-md-8 py-4">
+        <div class="container border">
+						<form action="/user" method="POST">
+							<div class="py-2">
+								<h4 class="text-center">Register</h4>
+								<div class="row">
+									<div class="col-md-6">
+                    <div class="form-group">
+											<label>First Name</label>
+											<input type="text" name="fname" class="form-control" placeholder="First Name">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Last Name</label>
+											<input type="text" name="lname" class="form-control" placeholder="Last Name">
+										</div>
+									</div>
+								</div>
+							  <div class="row">
+							  	<div class="col-md-6">
+							  		<div class="form-group">
+							  			<label>Email</label>
+							  			<input type="email" name="email" class="form-control" placeholder="example@example.example">
+							   </div>
+							  	</div>
+							  	<div class="col-md-6">
+							  		<div class="form-group">
+							  			<label>Mobile Number</label>
+							  			<input type="tel" name="phone" class="form-control" placeholder="+251-9-xx-xx-xxxx">
+							  	</div>
+							  	</div>
+							  </div>
+                    <!---->
+                <div class="row">
+                 <div class="col-sm-6">
+                     <div>
+                         <label>Gender</label>
+                     </div>
+                     <div class="form-group">
+                        <select class="form-control" name="gender" id="gender">
+                          <option value="">Choose one...</option>
+                          <option value="female ">Female</option>
+                          <option value="male">Male</option>
+                          <option value="other">Other</option>
+                        </select>
+                      </div> 
+                 </div>
+                 <div class="col-sm-6">
+                   <div><label>Status</label></div>
+                   <div class="form-group">
+                      <select class="form-control" name="gender" id="gender">
+                        <option value="">Choose one...</option>
+                        <option value="single ">Single</option>
+                        <option value="married">Married</option>
+                        <option value="divorced">Divorced</option>
+                      </select>
+                    </div> 
+                  </div>
+                </div>
+            <!---->
+            
+             <div class="form-group">
+              <label>Address</label>
+              <textarea placeholder="Enter Address Here.." rows="3" class="form-control"></textarea>
+             </div>	
+             <div class="row">
+               <div class="col-md-6">
+                <div class="form-group">
+                  <label>Birth Date</label>
+                  <input type="date" name="birth_date" placeholder="MM/DD/YYYY" class="form-control">
+                 </div>
+               </div>
+               <div class="col-md-6">
+                <div class="form-group">
+                  <label>User Name</label>
+                  <input type="text" name="user_name" placeholder="Prefered User Name" class="form-control">
+                 </div>
+               </div>
+             </div>
+             <!---->
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+								<label>Password</label>
+								<input type="password" name="password" class="form-control" placeholder="New password">
+								</div>
+              </div>
+              <div class="col-md-6">
+               <div class="form-group">
+							  	<label>Re-Password</label>
+							  	<input type="password" name="repassword"class ="form-control" placeholder="Repeat Password">
+								</div>
+              </div>
+            </div>
+						<div class="form-group" id="btn-register">
+							<input type="submit" name="submit"class ="btn btn-lg btn-primary roundded-pill" value="Register">
+						</div>
+					</div>
+	  		</form>
+	  		<div class="form-group text-center">
+	  		  <strong>If you have account </strong><a href="/User/login" name="login" type="button" class="btn-sm">Login</a><strong>  here.</strong> <br>
+	  		  <strong>If you forgot, </strong><a href="/User/change-password" name ="forget-pass" type="button" class="btn-sm"> Reset your Password</a> <strong>here.</strong>
+	  		</div>
+	  	</div>
+    </div>
+    <div class="col-md-2 py-4"></div>
+  </div>
+  </div>
+</section>
