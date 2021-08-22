@@ -1,0 +1,37 @@
+<section class="py-4">
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Create your settings</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            
+            <form action="/setting" method="POST">
+                <div class="row">
+                    <div class="col-md-6 border">
+                        <div class="form-group">
+                            <label>User Name: </label>
+                            <select  class="form-control" id="select" name="user_fname" tabindex="1" required>
+                                <%for(var i =0;i < data.length;i++) { %>
+                                <option> <%= data[i].email %> </option>
+                                <%}%>
+                            </select>
+                        </div>
+                        <div class="lead">
+                            <input type="submit" name ="submit" value="Set" class="btn btn-success">
+                        </div>
+                    </div>
+                    <div class="col-md-6 border">
+                        <div class="form-group text-center">
+                            <label> Sleep Duration  </label>
+                            <h6>duration</h6>
+                        </div>
+                        <div class="lead d-flex justify-content-end">
+                            <a class="btn btn-primary btn-md" href="#" role="button">Stop</a>
+                        </div>                
+                    </div>
+                </div>
+            </form>
+          </div>
+    </div>
+</section>
